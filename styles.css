@@ -1,55 +1,152 @@
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
+* {
   margin: 0;
   padding: 0;
-  color: #333;
-  background-color: #f9f9f9;
+  box-sizing: border-box;
 }
-header {
-  background-color: #6B4423;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-nav ul {
-  list-style: none;
-  padding: 0;
+
+body {
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: 100vh;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 1rem;
+  color: #ffffff;
 }
-nav a {
-  color: white;
-  text-decoration: none;
-}
-#hero {
-  background-color: #8B4513;
-  color: white;
+
+.container {
+  max-width: 900px;
+  width: 90%;
+  margin: 2rem auto;
   padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
-#menu {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
+
+/* Logo / Main Image */
+.logo-section {
+  margin-bottom: 2rem;
 }
-.menu-item {
-  background-color: white;
-  padding: 1rem;
+
+.main-logo {
+  max-width: 250px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.main-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Coming Soon */
+.coming-soon h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #ffd700, #ffaa00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.coming-soon h2 {
+  font-size: 2rem;
+  color: #ffd700;
   margin-bottom: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
+
+.coming-soon p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
 }
-footer {
-  background-color: #6B4423;
-  color: white;
-  text-align: center;
-  padding: 1rem;
+
+/* Contact Section */
+.contact-section {
+  background: rgba(255, 215, 0, 0.05);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.contact-section h3 {
+  font-size: 1.5rem;
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+}
+
+.contact-section p {
+  color: #cccccc;
+  margin-bottom: 0.8rem;
+}
+
+.contact-details p {
+  margin: 0.5rem 0;
+}
+
+.contact-details a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Footer / Watermark Info */
+.footer-info {
   margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trademark {
+  font-size: 0.9rem;
+  color: #999999;
+  margin-bottom: 0.3rem;
+}
+
+.disclaimer {
+  font-size: 0.8rem;
+  color: #777777;
+  margin-bottom: 0.3rem;
+  font-style: italic;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #ffd700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+  .coming-soon h1 {
+    font-size: 2rem;
+  }
+  .coming-soon h2 {
+    font-size: 1.5rem;
+  }
+  .main-logo {
+    max-width: 150px;
+  }
 }
